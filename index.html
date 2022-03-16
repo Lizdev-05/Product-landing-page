@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+
     <!-- bootsrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -23,23 +24,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     />
+
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand"
-            ><img src="trumpet2.png" alt="Trumpet's image"
-          /></a>
-          <h2>Original Trombones</h2>
-          <div class="d-flex">
-            <a href="">Features</a>
-            <a href="">How it works</a>
-            <a href="">Pricing</a>
-          </div>
-        </div>
-      </nav>
+    <nav class="navbar navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <img src="trumpet2.png" alt="Trumpet's image" />
+          Original Trombones
+        </a>
 
+        <div class="d-flex nav-items">
+          <a href="">Features</a>
+          <a href="">How it works</a>
+          <a href="">Pricing</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
       <form action="" id="form">
         <p>Handcrafted, home-made masterpieces</p>
         <input
@@ -48,33 +51,44 @@
           id="email"
           placeholder="enter your email address"
         />
-        <div class="btn btn-secondary">GET STARTED</div>
+        <br />
+        <button class="btn btn-secondary">GET STARTED</button>
       </form>
 
       <div class="content">
         <div class="premium">
-          <i class="fa-solid fa-fire-flame-curved"></i>
-          <h2>Premium Materials</h2>
-          <p>
-            Our trombones use the shiniest brass which is sourced locally. This
-            will increase the longevity of your purchase.
-          </p>
+          <div class="icon-1">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+          </div>
+          <div class="content-1">
+            <h2>Premium Materials</h2>
+            <p>
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
         </div>
         <div class="shipping">
-          <i class="fa-solid fa-truck"></i>
-          <h2>Fast Shipping</h2>
-          <p>
-            We make sure you receive your trombone as soon as we have finished
-            making it. We also provide free returns if you are not satisfied.
-          </p>
+          <div class="icon-2"><i class="fa-solid fa-truck"></i></div>
+          <div class="content-2">
+            <h2>Fast Shipping</h2>
+            <p>
+              We make sure you receive your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
         </div>
         <div class="quality">
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <h2>Quality Assurance</h2>
-          <p>
-            For every purchase you make, we will ensure there are no damages or
-            faults and we will check and test the pitch of your instrument.
-          </p>
+          <div class="icon-3">
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+          </div>
+          <div class="content-3">
+            <h2>Quality Assurance</h2>
+            <p>
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </p>
+          </div>
         </div>
       </div>
       <div class="video-content">
@@ -91,41 +105,41 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="card">
+            <div class="card-header"><h5>TENOR TROMBONE</h5></div>
             <div class="card-body">
-              <h5 class="card-title">TENOR TROMBONE</h5>
               <h3 class="card-text">$600</h3>
               <p class="card-text">Lorem ipsum.</p>
               <p class="card-text">Lorem ipsum.</p>
               <p class="card-text">Lorem ipsum dolor.</p>
               <p class="card-text">Lorem ipsum.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn card-btn">Go somewhere</a>
             </div>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="card">
+            <div class="card-header"><h5>BASS TROMBONE</h5></div>
             <div class="card-body">
-              <h5 class="card-title">BASS TROMBONE</h5>
               <h3 class="card-text">$900</h3>
               <p class="card-text">Lorem ipsum.</p>
               <p class="card-text">Lorem ipsum.</p>
               <p class="card-text">Lorem ipsum dolor.</p>
               <p class="card-text">Lorem ipsum.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn card-btn">Go somewhere</a>
             </div>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="card">
+            <div class="card-header"><h5>VALVE TROMBONE</h5></div>
             <div class="card-body">
-              <h5 class="card-title">VALVE TROMBONE</h5>
               <h3 class="card-text">$1200</h3>
               <p class="card-text">
                 Plays similar to a Trumpet Great for Jazz Bands
               </p>
               <p class="card-text">Lorem ipsum dolor.</p>
               <p class="card-text">Lorem ipsum.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn card-btn">Go somewhere</a>
             </div>
           </div>
         </div>
